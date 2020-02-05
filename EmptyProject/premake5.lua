@@ -28,7 +28,7 @@ includedirs
 
 links
 {
-    opengl32
+ 
 }
 
 filter "system:windows"
@@ -36,15 +36,15 @@ filter "system:windows"
 
     defines
     {
-        "AS_PLATFORM_WINDOWS"
+    
     }
 
 filter "configurations:Debug"
-    defines "AS_DEBUG"
+    defines "_DEBUG"
     runtime "Debug"
     symbols "on"
 
 filter "configurations:Release"
-    defines "AS_RELEASE"
+    defines "_RELEASE"
     runtime "Release"
     optimize "on"
